@@ -1,0 +1,18 @@
+title: Automating payments with bunq
+description: >-
+  Learn how to automate worldwide payments for your business or personal project
+  using the bunq API.
+template:
+  repo: automating-payments-with-bunq-template
+  name: automating-payments-with-bunq
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
